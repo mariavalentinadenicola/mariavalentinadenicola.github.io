@@ -10,66 +10,104 @@
 <style>
 
 body {
-    background-color: #FAF5EF;
-    color: #342b25;
-    font-family: "Courier New", Courier, monospace;
-    font-size: 14px;
-    line-height: 1.8;
-    max-width: 760px;
-    margin: 65px auto;
-    padding: 25px;
+    background-color: #f5f0d8;
+    color: #252019;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 20px;
+    line-height: 1.35;
+    margin: 25px;
 }
 
 h1 {
-    font-size: 27px;
-    font-weight: normal;
-    margin-bottom: 5px;
+    font-size: 44px;
+    color: #48453f;
+    margin-top: 20px;
+    margin-bottom: 25px;
 }
 
 h2 {
-    font-size: 16px;
-    font-weight: bold;
-    margin-top: 40px;
+    color: #183b9b;
+    font-size: 26px;
+    margin-top: 45px;
     margin-bottom: 15px;
 }
 
 a {
-    color: #803d35;
+    color: #0000cc;
     text-decoration: underline;
 }
 
-a:hover {
-    color: #ad6554;
+a:visited {
+    color: #663399;
 }
 
 hr {
     border: none;
-    border-top: 1px dashed #958674;
-    margin: 30px 0;
+    border-top: 2px solid #aaa18b;
+    margin: 25px 0;
 }
 
-small {
-    font-size: 11px;
-    color: #756b5d;
+.intro {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.info {
+    flex: 1;
+}
+
+.photo {
+    width: 370px;
+    max-width: 40%;
+    height: auto;
+}
+
+.section {
+    margin-left: 40px;
+}
+
+.section p {
+    margin-bottom: 22px;
 }
 
 ul {
-    list-style-type: square;
-    padding-left: 22px;
+    padding-left: 30px;
 }
 
 li {
-    margin-bottom: 8px;
+    margin-bottom: 12px;
 }
 
-.header {
-    margin-bottom: 35px;
+.small {
+    font-size: 15px;
+    color: #696254;
 }
 
-.note {
-    border-left: 2px solid #958674;
-    padding-left: 15px;
-    margin: 25px 0;
+@media (max-width: 700px) {
+
+    body {
+        margin: 15px;
+        font-size: 18px;
+    }
+
+    h1 {
+        font-size: 32px;
+    }
+
+    .intro {
+        flex-direction: column;
+    }
+
+    .photo {
+        max-width: 100%;
+        width: 300px;
+    }
+
+    .section {
+        margin-left: 15px;
+    }
 }
 
 </style>
@@ -77,72 +115,99 @@ li {
 
 <body>
 
-<div class="header">
-
-<small>personal webpage / mathematics</small>
-
 <h1>maria valentina de nicola</h1>
 
+<hr>
+
+<h2>personal information:</h2>
+
+<div class="intro">
+
+<div class="info">
+
 <p>
+<b>current position:</b><br>
 master's student in mathematics<br>
-université de bourgogne, dijon, france
+université de bourgogne<br>
+dijon, france
 </p>
+
+<p>
+<b>previous institutions:</b><br>
+sapienza university of rome<br>
+eth zürich
+</p>
+
+<p>
+<b>email:</b><br>
+[your email]
+</p>
+
+<p>
+<a href="cv.pdf">curriculum vitae (pdf)</a>
+</p>
+
+</div>
+
+<img class="photo"
+     src="foto_github.jpeg"
+     alt="">
 
 </div>
 
 <hr>
 
-<h2>about me</h2>
 
-<p>
-i am currently a master's student in mathematics
-(math4phys) at université de bourgogne, dijon.
-</p>
+<h2>education:</h2>
 
-<p>
-i obtained my bachelor's degree in mathematics
-from sapienza university of rome in 2026.
-during my final semester, i studied at eth zürich,
-where i worked on symmetric spaces under the
-supervision of prof. urs lang.
-</p>
-
-
-<h2>education</h2>
+<div class="section">
 
 <p>
 <b>2026 – present</b><br>
 master's degree in mathematics (math4phys)<br>
-université de bourgogne, dijon, france
+<a href="https://www.u-bourgogne.fr/">
+université de bourgogne</a>, dijon, france
 </p>
 
 <p>
 <b>february – july 2026</b><br>
-exchange semester<br>
-eth zürich, switzerland
+exchange semester in mathematics<br>
+<a href="https://ethz.ch/">
+eth zürich</a>, switzerland
 </p>
 
 <p>
 <b>2023 – 2026</b><br>
 bachelor's degree in mathematics<br>
-sapienza university of rome, italy<br>
+<a href="https://www.uniroma1.it/">
+sapienza university of rome</a>, italy<br>
 final grade: 110/110
 </p>
 
+</div>
 
-<h2>mathematical interests</h2>
+
+<h2>mathematical interests:</h2>
+
+<div class="section">
 
 <p>
-abstract algebra, lie theory and representation theory.
+my main interests are in abstract algebra
+and lie theory, with an interest in
+mathematical physics.
 </p>
 
 <p>
-i am currently exploring different directions
-within algebra.
+i am also interested in representation theory
+and algebraic structures.
 </p>
 
+</div>
 
-<h2>projects</h2>
+
+<h2>academic projects:</h2>
+
+<div class="section">
 
 <p>
 <b>braid groups</b><br>
@@ -154,34 +219,77 @@ supervisor: anne-laure thiel<br>
 <p>
 <b>an introduction to symmetric spaces:
 a lie-theoretic perspective</b><br>
-bachelor's project, eth zürich<br>
+bachelor's thesis, sapienza university of rome<br>
+project carried out at eth zürich, 2026<br>
 supervisor: urs lang<br>
-2026
+co-supervisor: simone diverio
 </p>
 
+</div>
 
-<h2>outside mathematics</h2>
+
+<h2>curriculum vitae:</h2>
+
+<div class="section">
+
+<ul>
+<li>
+<a href="cv.pdf">curriculum vitae (pdf)</a>
+</li>
+</ul>
+
+</div>
+
+
+<h2>beyond mathematics:</h2>
+
+<div class="section">
 
 <p>
-i like travelling, learning languages and music.
+travelling, music and languages.
 </p>
 
 <p>
 next destination: india.
 </p>
 
+</div>
 
-<h2>contact</h2>
 
-<p>
-email: Maria-Valentina_De-Nicola@etu.ube.fr
-</p>
+<h2>some links:</h2>
+
+<div class="section">
+
+<ul>
+
+<li>
+<a href="https://www.uniroma1.it/">
+sapienza university of rome
+</a>
+</li>
+
+<li>
+<a href="https://ethz.ch/">
+eth zürich
+</a>
+</li>
+
+<li>
+<a href="https://www.u-bourgogne.fr/">
+université de bourgogne
+</a>
+</li>
+
+</ul>
+
+</div>
+
 
 <hr>
 
-<small>
+<p class="small">
 last updated: november 2026
-</small>
+</p>
 
 </body>
 </html>
